@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
+    float xMin, xMax;
+    [SerializeField] float padding = 1f;
     static float moveSpeed = 20f;
 
     public static float MoveSpeed 
@@ -13,7 +15,7 @@ public class Car : MonoBehaviour
 
     void Start()
     {
-        
+        SetBoundaries();
     }
 
     void Update()
@@ -24,7 +26,14 @@ public class Car : MonoBehaviour
     void Move() 
     {
         float horizontalMovement = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        float xPosition = transform.position.x + horizontalMovement;
+        float xPosition = Mathf.Clamp(transform.position.x + horizontalMovement, xMin, xMax);
         transform.position = new Vector3(xPosition, transform.position.y);
+    }
+
+    void SetBoundaries() 
+    {
+        Camera main = Camera.main;
+        xMin = main.ViewportToWorldPoint(new Vector3(0,0,0)).x + padding;
+        xMax = main.ViewportToWorldPoint(new Vector3(1,0,0)).x - padding;
     }
 }
