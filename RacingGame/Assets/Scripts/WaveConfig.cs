@@ -5,13 +5,4 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "WaveConfig")]
 public class WaveConfig : ScriptableObject
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }
