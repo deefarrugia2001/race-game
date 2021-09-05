@@ -1878,3 +1878,77 @@ Start importing Assets/Fonts/Armstrong SDF.asset using Guid(1d21aaa5c02fb3243b4e
  -> (artifact id: 'df0fc622a760d0e4b7568565249282fa') in 0.078453 seconds 
   Import took 0.087693 seconds .
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 115.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 32 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.0 MB.
+System memory in use after: 58.4 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2687.
+Total: 555.713900 ms (FindLiveObjects: 15.546300 ms CreateObjectMapping: 0.444700 ms MarkObjects: 537.385900 ms  DeleteObjects: 2.325700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 257.154311 seconds.
+  path: Assets/Fonts/Armstrong Oblique SDF.asset
+  artifactKey: Guid(37c864ddc76c1704f8cf0c8d13778fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Armstrong Oblique SDF.asset using Guid(37c864ddc76c1704f8cf0c8d13778fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6345d4a5cb2faa202f0c35996f3a37c') in 0.824504 seconds 
+  Import took 0.967864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001392 seconds.
+  path: Assets/Fonts/Armstrong-Extrabold SDF.asset
+  artifactKey: Guid(12f23b1dfc43a2449bf83c007e0dea71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Armstrong-Extrabold SDF.asset using Guid(12f23b1dfc43a2449bf83c007e0dea71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2303a4e98423ec1acce56d56a6eda2') in 0.222114 seconds 
+  Import took 0.258036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000651 seconds.
+  path: Assets/Fonts/Armstrong SDF.asset
+  artifactKey: Guid(1d21aaa5c02fb3243b4eac7d971d9e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Armstrong SDF.asset using Guid(1d21aaa5c02fb3243b4eac7d971d9e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34562db2255da1b3e76e8d0da6153e1') in 0.427093 seconds 
+  Import took 0.445054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.213883 seconds.
+  path: Assets/Fonts/Armstrong Oblique SDF.asset
+  artifactKey: Guid(37c864ddc76c1704f8cf0c8d13778fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Armstrong Oblique SDF.asset using Guid(37c864ddc76c1704f8cf0c8d13778fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6345d4a5cb2faa202f0c35996f3a37c') in 0.101453 seconds 
+  Import took 0.125320 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 31.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.8 MB.
+System memory in use after: 58.2 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2687.
+Total: 436.259900 ms (FindLiveObjects: 7.134400 ms CreateObjectMapping: 0.262200 ms MarkObjects: 391.423900 ms  DeleteObjects: 37.435300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
