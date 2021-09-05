@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Material material;
+    Vector2 offset;
+    static float moveSpeed = Car.MoveSpeed;
+
     void Start()
     {
-        
+        material = GetComponent<Renderer>().material;
+        offset = new Vector2(0, moveSpeed);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        material.mainTextureOffset += offset * Time.deltaTime * moveSpeed;
     }
 }
