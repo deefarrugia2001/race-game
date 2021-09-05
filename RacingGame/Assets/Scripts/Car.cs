@@ -8,6 +8,10 @@ public class Car : MonoBehaviour
     [SerializeField] float padding = 1f;
     static float moveSpeed = 20f;
 
+    [SerializeField] GameObject laserPrefab;
+    [SerializeField] float projectileSpeed = 20f;
+    [SerializeField] float projectileFiringTime = .3f;
+
     public static float MoveSpeed => moveSpeed;
 
     void Start()
@@ -32,9 +36,5 @@ public class Car : MonoBehaviour
         Camera main = Camera.main;
         xMin = main.ViewportToWorldPoint(new Vector3(0,0,0)).x + padding;
         xMax = main.ViewportToWorldPoint(new Vector3(1,0,0)).x - padding;
-    }
-
-    void Fire() 
-    {
     }
 }
