@@ -7,12 +7,8 @@ public class Car : MonoBehaviour
     float xMin, xMax;
     [SerializeField] float padding = 1f;
     static float moveSpeed = 20f;
-    [SerializeField] bool canShoot;
 
-    public static float MoveSpeed 
-    {
-        get { return moveSpeed; }
-    }
+    public static float MoveSpeed => moveSpeed;
 
     void Start()
     {
