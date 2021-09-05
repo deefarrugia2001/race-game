@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-    [SerializeField] static float moveSpeed = 10f;
+    static float moveSpeed = 20f;
 
     public static float MoveSpeed 
     {
@@ -18,6 +18,13 @@ public class Car : MonoBehaviour
 
     void Update()
     {
-        
+        Move();
+    }
+
+    void Move() 
+    {
+        float horizontalMovement = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+        float xPosition = transform.position.x + horizontalMovement;
+        transform.position = new Vector3(xPosition, transform.position.y);
     }
 }
