@@ -33,4 +33,8 @@ public class Car : MonoBehaviour
         xMin = main.ViewportToWorldPoint(new Vector3(0,0,0)).x + padding;
         xMax = main.ViewportToWorldPoint(new Vector3(1,0,0)).x - padding;
     }
+
+    void Fire() 
+    {
+    }
 }
