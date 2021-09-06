@@ -28,4 +28,9 @@ public class GameSession : MonoBehaviour
     {
         score += pointsToAdd;
     }
+
+    public void ResetGame() 
+    {
+        Destroy(gameObject);
+    }
 }

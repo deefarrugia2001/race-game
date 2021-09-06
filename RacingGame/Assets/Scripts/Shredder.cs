@@ -5,6 +5,13 @@ using UnityEngine;
 public class Shredder : MonoBehaviour
 {
     [SerializeField] AudioClip pointsSoundEffect;
+    GameSession gameSession;
+    int points = 5;
+
+    void Start()
+    {
+        gameSession = FindObjectOfType<GameSession>();
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,6 +19,7 @@ public class Shredder : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(pointsSoundEffect, Camera.main.transform.position);
             Destroy(collision.gameObject);
+            gameSession.AddToScore(points);
         }
         else 
         {
