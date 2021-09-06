@@ -27,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
         {
             GameObject obstacle = Instantiate(waveConfig.Obstacle, waveConfig.Waypoints[0].position, Quaternion.identity);
             obstacle.GetComponent<EnemyPathing>().SetWaveConfig(waveConfig);
-            yield return new WaitForSeconds(waveConfig.MoveSpeed);
+            yield return new WaitForSeconds(waveConfig.TimeBetweenSpawns);
         }
     }
 }
