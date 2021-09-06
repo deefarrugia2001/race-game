@@ -6,12 +6,12 @@ using TMPro;
 public class Health : MonoBehaviour
 {
     TextMeshProUGUI healthElement;
-    GameSession car;
+    Car car;
 
     void Start()
     {
         healthElement = GetComponent<TextMeshProUGUI>();
-        car = FindObjectOfType<GameSession>();
+        car = FindObjectOfType<Car>();
     }
 
     void Update()
