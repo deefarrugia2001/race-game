@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f476b358cab9fc43b714ed4b2d0079c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  explosionParticles: {fileID: 5810009606868603767, guid: 5564956d1df53ff4097657a064b8cc08, type: 3}
   bulletPrefab: {fileID: 6833676071240929343, guid: fafe51e5e5052b64a9f488ed5a9787ae, type: 3}
   canShoot: 1
   minimumShootTime: 0.2
