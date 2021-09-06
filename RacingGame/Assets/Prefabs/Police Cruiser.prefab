@@ -206,8 +206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f476b358cab9fc43b714ed4b2d0079c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSoundEffect: {fileID: 8300000, guid: 6d773696a14ab024fb551a5bfc604697, type: 3}
+  deathSoundEffect: {fileID: 8300000, guid: 7b7a01489c081b94fb967fc184299982, type: 3}
   explosionParticles: {fileID: 5810009606868603767, guid: 5564956d1df53ff4097657a064b8cc08, type: 3}
+  explosionDuration: 1
   bulletPrefab: {fileID: 6833676071240929343, guid: fafe51e5e5052b64a9f488ed5a9787ae, type: 3}
   canShoot: 0
   minimumShootTime: 0.2
