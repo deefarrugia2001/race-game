@@ -210,7 +210,7 @@ MonoBehaviour:
   explosionParticles: {fileID: 5810009606868603767, guid: 5564956d1df53ff4097657a064b8cc08, type: 3}
   explosionDuration: 1
   bulletPrefab: {fileID: 6833676071240929343, guid: fafe51e5e5052b64a9f488ed5a9787ae, type: 3}
-  canShoot: 0
+  canShoot: 1
   minimumShootTime: 0.2
   maximumShootTime: 3
   projectileSpeed: 20

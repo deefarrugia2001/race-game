@@ -438,6 +438,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82165861, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 82165861, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82165861, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82165861, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82165861, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.9926069
+      objectReference: {fileID: 0}
+    - target: {fileID: 82165861, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 82165861, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255613
+      objectReference: {fileID: 0}
+    - target: {fileID: 786270579, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 786270579, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 786270579, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 786270579, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 786270579, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.9926069
+      objectReference: {fileID: 0}
+    - target: {fileID: 786270579, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 786270579, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255613
+      objectReference: {fileID: 0}
     - target: {fileID: 3299284187622756354, guid: dccd125772c23d44d85f0c1408ba2e41, type: 3}
       propertyPath: m_Name
       value: Canvas

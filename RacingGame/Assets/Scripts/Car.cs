@@ -36,4 +36,20 @@ public class Car : MonoBehaviour
         xMin = main.ViewportToWorldPoint(new Vector3(0,0,0)).x + padding;
         xMax = main.ViewportToWorldPoint(new Vector3(1,0,0)).x - padding;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
+
+        if (!damageDealer)
+            return;
+        
+        ProcessHit(damageDealer);
+    }
+
+    void ProcessHit(DamageDealer damageDealer) 
+    {
+        health -= damageDealer.Damage;
+        damageDealer.Hit();
+    }
 }
