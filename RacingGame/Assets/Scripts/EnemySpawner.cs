@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    List<WaveConfig> waveConfigs;
+    bool looping = true;
+
+    IEnumerator Start()
     {
-        
+        do
+            yield return StartCoroutine(SpawnAllWaves());
+        while (looping);
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator SpawnAllWaves() 
     {
-        
     }
 }
