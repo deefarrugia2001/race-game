@@ -28,7 +28,8 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Die();
+        if(collision.gameObject.layer == 8)
+            Die();
     }
 
     void Die() 

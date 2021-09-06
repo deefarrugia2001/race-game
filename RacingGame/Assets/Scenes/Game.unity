@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c6635a228301b48bc557ebfd9dc893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsSoundEffect: {fileID: 8300000, guid: 477ca8062769a6b41b41726912318fb1, type: 3}
 --- !u!1 &1534246873
 GameObject:
   m_ObjectHideFlags: 0
