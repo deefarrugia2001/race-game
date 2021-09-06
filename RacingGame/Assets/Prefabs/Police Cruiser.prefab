@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8226439447974440786}
   - component: {fileID: -4345539589477169265}
   - component: {fileID: 236151742650537760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Police Cruiser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
