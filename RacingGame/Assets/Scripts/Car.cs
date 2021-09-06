@@ -8,10 +8,6 @@ public class Car : MonoBehaviour
     [SerializeField] float padding = 1f;
     static float moveSpeed = 20f;
 
-    [SerializeField] GameObject laserPrefab;
-    [SerializeField] float projectileSpeed = 20f;
-    [SerializeField] float projectileFiringTime = .3f;
-
     public static float MoveSpeed => moveSpeed;
 
     void Start()
