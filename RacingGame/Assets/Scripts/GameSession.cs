@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameSession : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    static List<GameSession> sessionInstances;
+    int score = 0;
+
+    public int Score => score;
+
+    void Awake()
     {
-        
+        ImplementSingleton();
     }
 
-    // Update is called once per frame
-    void Update()
+    void ImplementSingleton() 
     {
-        
+        sessionInstances = FindObjectsOfType<GameSession>().ToList();
+        if (sessionInstances.Count > 1)
+            Destroy(gameObject);
+        else
+            DontDestroyOnLoad(gameObject);
+    }
+
+    public void AddToScore(int pointsToAdd) 
+    {
+        score += pointsToAdd;
     }
 }
