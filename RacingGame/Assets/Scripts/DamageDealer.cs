@@ -7,4 +7,9 @@ public class DamageDealer : MonoBehaviour
     [SerializeField] int damage;
 
     public int Damage => damage;
+
+    public void Hit()
+    {
+        Destroy(gameObject);
+    }
 }
