@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] bool canShoot;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (canShoot)
+            CountDownAndShoot();
+    }
+
+    void CountDownAndShoot() 
+    {
     }
 }
