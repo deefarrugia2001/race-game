@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16656b051b490694b8ed73688e4801f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSoundEffect: {fileID: 8300000, guid: 6d773696a14ab024fb551a5bfc604697, type: 3}
+  explosionParticles: {fileID: 5810009606868603767, guid: 5564956d1df53ff4097657a064b8cc08, type: 3}
+  explosionDuration: 1
+  health: 50
   padding: 1
 --- !u!60 &670913461
 PolygonCollider2D:

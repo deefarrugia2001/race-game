@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
+    [SerializeField] AudioClip deathSoundEffect;
+
+    [SerializeField] GameObject explosionParticles;
+    [SerializeField] float explosionDuration = 1f;
+
+    GameSession gameSession;
     [SerializeField] float health = 50f;
 
     float xMin, xMax;
@@ -15,6 +21,7 @@ public class Car : MonoBehaviour
 
     void Start()
     {
+        gameSession = FindObjectOfType<GameSession>();
         SetBoundaries();
     }
 
@@ -51,5 +58,16 @@ public class Car : MonoBehaviour
     {
         health -= damageDealer.Damage;
         damageDealer.Hit();
+
+        if (health <= 0 && gameSession.Score < 100)
+            Die();
+    }
+
+    void Die()
+    {
+        AudioSource.PlayClipAtPoint(deathSoundEffect, Camera.main.transform.position);
+        GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
+        Destroy(explosionVFX, explosionDuration);
+        Destroy(gameObject);
     }
 }
