@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5195158039409088458}
   - component: {fileID: 5195158039409088461}
   - component: {fileID: 5195158039409088459}
-  - component: {fileID: 2425399688980620000}
   m_Layer: 8
   m_Name: Race Car
   m_TagString: Untagged
@@ -97,15 +96,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   padding: 1
---- !u!114 &2425399688980620000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5195158039409088460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f476b358cab9fc43b714ed4b2d0079c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
