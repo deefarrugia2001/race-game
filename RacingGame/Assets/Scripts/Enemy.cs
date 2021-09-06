@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] AudioClip deathSoundEffect;
 
     [SerializeField] GameObject explosionParticles;
+    [SerializeField] float explosionDuration = 1f;
 
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] bool canShoot;
@@ -27,19 +28,14 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        ProcessHit();
-    }
-
-    void ProcessHit() 
-    {
         Die();
     }
 
     void Die() 
     {
-        //Debug.Log("The enemy has died.");
-        //GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
-        //Destroy(explosionVFX, 1f);
+        AudioSource.PlayClipAtPoint(deathSoundEffect, Camera.main.transform.position);
+        GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
+        Destroy(explosionVFX, explosionDuration);
         Destroy(gameObject);
     }
 
