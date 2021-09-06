@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float health = 100;
+    [SerializeField] AudioClip deathSoundEffect;
+
     [SerializeField] GameObject explosionParticles;
 
     [SerializeField] GameObject bulletPrefab;
