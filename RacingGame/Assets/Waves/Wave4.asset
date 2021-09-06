@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle: {fileID: 8404214676916113436, guid: 571e9bdebad60244088f7e0fbba79c0c, type: 3}
   pathPrefab: {fileID: 7298872920846201217, guid: 733553a03704f83478d4260fa17856a4, type: 3}
-  timeBetweenSpawns: 2
+  timeBetweenSpawns: 1
   quantity: 10
   moveSpeed: 4
