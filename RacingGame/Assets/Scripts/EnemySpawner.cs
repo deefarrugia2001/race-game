@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     List<WaveConfig> waveConfigs;
     bool looping = true;
+    byte startingIndex = 0;
 
     IEnumerator Start()
     {
@@ -22,5 +23,11 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnAllEnemiesInWave(WaveConfig waveConfig) 
     {
+        for(byte index = startingIndex; index < waveConfig.Quantity; index++) 
+        {
+            GameObject obstacle = Instantiate(waveConfig.Obstacle, waveConfig.Waypoints[0].position, Quaternion.identity);
+            obstacle.GetComponent<EnemyPathing>().SetWaveConfig(waveConfig);
+            yield return new WaitForSeconds(waveConfig.MoveSpeed);
+        }
     }
 }
