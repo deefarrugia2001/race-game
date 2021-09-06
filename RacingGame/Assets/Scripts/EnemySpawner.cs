@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    List<WaveConfig> waveConfigs;
+    [SerializeField] List<WaveConfig> waveConfigs;
     bool looping = true;
     byte startingIndex = 0;
 
