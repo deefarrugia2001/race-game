@@ -16,5 +16,11 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnAllWaves() 
     {
+        foreach (WaveConfig waveConfig in waveConfigs)
+            yield return StartCoroutine(SpawnAllEnemiesInWave(waveConfig));
+    }
+
+    IEnumerator SpawnAllEnemiesInWave(WaveConfig waveConfig) 
+    {
     }
 }
