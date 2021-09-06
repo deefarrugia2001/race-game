@@ -20,6 +20,9 @@ public class Shredder : MonoBehaviour
             AudioSource.PlayClipAtPoint(pointsSoundEffect, Camera.main.transform.position);
             Destroy(collision.gameObject);
             gameSession.AddToScore(points);
+
+            if (gameSession.Score >= 100)
+                Debug.Log("You have earned more than 100 points.");
         }
         else 
         {
