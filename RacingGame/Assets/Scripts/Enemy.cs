@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float health = 100;
+    [SerializeField] GameObject explosionParticles;
 
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] bool canShoot;
@@ -26,10 +27,24 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
+        ProcessHit(damageDealer);
     }
 
     void ProcessHit(DamageDealer damageDealer) 
     {
+        health -= damageDealer.Damage;
+        damageDealer.Hit();
+
+        if (health <= 0)
+            Die();
+    }
+
+    void Die() 
+    {
+        Debug.Log("The enemy has died.");
+        GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
+        Destroy(explosionVFX, 1f);
+        Destroy(gameObject);
     }
 
     void CountDownAndShoot() 
