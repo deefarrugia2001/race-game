@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] float health = 100;
+
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] bool canShoot;
     [SerializeField] float minimumShootTime = .2f, maximumShootTime = 3f;
@@ -19,6 +21,15 @@ public class Enemy : MonoBehaviour
     {
         if (canShoot)
             CountDownAndShoot();
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
+    }
+
+    void ProcessHit(DamageDealer damageDealer) 
+    {
     }
 
     void CountDownAndShoot() 
