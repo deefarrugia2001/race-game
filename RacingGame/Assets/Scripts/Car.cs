@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
+    [SerializeField] float health = 50f;
+
     float xMin, xMax;
     [SerializeField] float padding = 1f;
     static float moveSpeed = 20f;
 
+    public float Health => health;
     public static float MoveSpeed => moveSpeed;
 
     void Start()

@@ -36,9 +36,9 @@ public class Enemy : MonoBehaviour
 
     void Die() 
     {
-        Debug.Log("The enemy has died.");
-        GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
-        Destroy(explosionVFX, 1f);
+        //Debug.Log("The enemy has died.");
+        //GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
+        //Destroy(explosionVFX, 1f);
         Destroy(gameObject);
     }
 
