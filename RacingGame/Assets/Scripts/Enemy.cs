@@ -26,17 +26,12 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
-        ProcessHit(damageDealer);
+        ProcessHit();
     }
 
-    void ProcessHit(DamageDealer damageDealer) 
+    void ProcessHit() 
     {
-        health -= damageDealer.Damage;
-        damageDealer.Hit();
-
-        if (health <= 0)
-            Die();
+        Die();
     }
 
     void Die() 
