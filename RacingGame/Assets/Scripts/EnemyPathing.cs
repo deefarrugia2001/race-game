@@ -19,6 +19,21 @@ public class EnemyPathing : MonoBehaviour
         Move();
     }
 
+    void Move()
+    {
+        if (waypointIndex < waypoints.Count)
+        {
+            Vector3 targetPosition = waypoints[waypointIndex].position;
+            float frameIndependentMovement = Time.deltaTime * waveConfig.MoveSpeed;
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, frameIndependentMovement);
+
+            if (transform.position == targetPosition)
+                waypointIndex++;
+        }
+        else
+            Destroy(gameObject);
+    }
+
     public void SetWaveConfig(WaveConfig waveConfigToSet)
     {
         waveConfig = waveConfigToSet;
