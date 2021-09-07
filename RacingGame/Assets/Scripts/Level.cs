@@ -7,23 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
-    static List<Level> levelInstances;
     [SerializeField] float waitDelay = 2f;
     GameSession gameSession;
-
-    void Awake()
-    {
-        ImplementSingleton();
-    }
-
-    void ImplementSingleton() 
-    {
-        levelInstances = FindObjectsOfType<Level>().ToList();
-        if (levelInstances.Count > 1)
-            Destroy(gameObject);
-        else
-            DontDestroyOnLoad(gameObject);
-    }
 
     void Start()
     {
