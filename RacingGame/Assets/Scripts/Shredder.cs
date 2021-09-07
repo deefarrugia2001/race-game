@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Shredder : MonoBehaviour
 {
+    [SerializeField] AudioClip winSound;
     [SerializeField] AudioClip pointsSoundEffect;
+
+    Level level;
     GameSession gameSession;
     int points = 5;
 
     void Start()
     {
+        level = FindObjectOfType<Level>();
         gameSession = FindObjectOfType<GameSession>();
     }
 
@@ -22,11 +26,10 @@ public class Shredder : MonoBehaviour
             gameSession.AddToScore(points);
 
             if (gameSession.Score >= 100)
-                Debug.Log("You have earned more than 100 points.");
-        }
-        else 
-        {
-            Debug.Log("You have dodged a bullet.");
+            {
+                AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position);
+                level.LoadWin();
+            }
         }
     }
 }
