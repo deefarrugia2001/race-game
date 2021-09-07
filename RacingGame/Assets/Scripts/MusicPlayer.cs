@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class MusicPlayer : MonoBehaviour
+public class MusicPlayer : MonoBehaviour, ISingleton
 {
     static List<MusicPlayer> musicPlayerInstances;
     [SerializeField] AudioClip backgroundMusic;
@@ -14,7 +14,7 @@ public class MusicPlayer : MonoBehaviour
         ImplementSingleton();
     }
 
-    void ImplementSingleton() 
+    public void ImplementSingleton() 
     {
         musicPlayerInstances = FindObjectsOfType<MusicPlayer>().ToList();
         if (musicPlayerInstances.Count > 1)

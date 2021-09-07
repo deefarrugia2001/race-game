@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class GameSession : MonoBehaviour
+public class GameSession : MonoBehaviour, ISingleton
 {
     static List<GameSession> sessionInstances;
     int score = 0;
@@ -15,7 +15,7 @@ public class GameSession : MonoBehaviour
         ImplementSingleton();
     }
 
-    void ImplementSingleton() 
+    public void ImplementSingleton() 
     {
         sessionInstances = FindObjectsOfType<GameSession>().ToList();
         if (sessionInstances.Count > 1)

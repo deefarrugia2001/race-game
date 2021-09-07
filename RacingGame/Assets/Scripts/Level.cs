@@ -8,11 +8,11 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour
 {
     [SerializeField] float waitDelay = 2f;
-    //GameSession gameSession;
+    GameSession gameSession;
 
     void Start()
     {
-        //gameSession = FindObjectOfType<GameSession>();    
+        gameSession = FindObjectOfType<GameSession>();    
     }
 
     public void LoadMainMenu() 
@@ -22,7 +22,7 @@ public class Level : MonoBehaviour
 
     public void LoadGame() 
     {
-        FindObjectOfType<GameSession>().ResetGame();
+        gameSession.ResetGame();
         SceneManager.LoadScene("Game");
     }
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Car : MonoBehaviour
+public class Car : MonoBehaviour, ICharacter
 {
     Level level;
 
@@ -66,7 +66,7 @@ public class Car : MonoBehaviour
             Die();
     }
 
-    void Die()
+    public void Die()
     {
         AudioSource.PlayClipAtPoint(deathSoundEffect, Camera.main.transform.position);
         GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);

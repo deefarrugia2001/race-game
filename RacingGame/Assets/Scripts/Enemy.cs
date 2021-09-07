@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, ICharacter
 {
     [SerializeField] AudioClip deathSoundEffect;
     [SerializeField] AudioClip shootSound;
@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
             Die();
     }
 
-    void Die() 
+    public void Die() 
     {
         AudioSource.PlayClipAtPoint(deathSoundEffect, Camera.main.transform.position);
         GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
