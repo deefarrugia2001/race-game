@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    static List<>
+    [SerializeField] AudioClip backgroundMusic;
+    AudioSource audioSource;
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
