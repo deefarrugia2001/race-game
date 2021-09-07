@@ -39,4 +39,13 @@ public class Level : MonoBehaviour
         yield return new WaitForSeconds(waitDelay);
         SceneManager.LoadScene(scene);
     }
+
+    public void Quit()
+    {
+        #if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+        #elif UNITY_STANDALONE
+            Application.Quit();
+        #endif
+    }
 }
