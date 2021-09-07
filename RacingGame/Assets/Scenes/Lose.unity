@@ -474,5 +474,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 856290446}
+    - target: {fileID: 4035270872971621661, guid: caf6445bf29a03b43a0faab8e0f5b644, type: 3}
+      propertyPath: m_text
+      value: You lose!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caf6445bf29a03b43a0faab8e0f5b644, type: 3}
