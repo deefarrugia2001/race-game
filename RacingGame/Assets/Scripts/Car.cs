@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
+    Level level;
+
     [SerializeField] AudioClip deathSoundEffect;
 
     [SerializeField] GameObject explosionParticles;
@@ -21,6 +23,7 @@ public class Car : MonoBehaviour
 
     void Start()
     {
+        level = FindObjectOfType<Level>();
         gameSession = FindObjectOfType<GameSession>();
         SetBoundaries();
     }
@@ -69,5 +72,6 @@ public class Car : MonoBehaviour
         GameObject explosionVFX = Instantiate(explosionParticles, transform.position, Quaternion.identity);
         Destroy(explosionVFX, explosionDuration);
         Destroy(gameObject);
+        level.LoadLose();
     }
 }
