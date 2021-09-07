@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] AudioClip deathSoundEffect;
+    [SerializeField] AudioClip shootSound;
 
     [SerializeField] GameObject explosionParticles;
     [SerializeField] float explosionDuration = 1f;
@@ -55,5 +56,6 @@ public class Enemy : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
+        AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position);
     }
 }
